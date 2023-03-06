@@ -1,12 +1,12 @@
 body{
-    background-color: cadetblue;
-    font-style: italic;
-    font-size: x-large;
+    background-color: rgb(161, 118, 161);
+    
     
 }
 
-#h1{
-    color: blue;
+td:hover {
+    background-color: rgb(219, 131, 236);
+
 }
 
 
