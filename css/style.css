@@ -9,4 +9,12 @@ td:hover {
 
 }
 
+/*estilo por id*/
+
+#nombre{
+    border: 1px solid plum;
+    border-radius: 3px;
+    background-color: antiquewhite;
+}
+
 
