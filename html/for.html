@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>formulario</title>
 </head>
 <body>
     <h1>formularios</h1>
@@ -23,5 +23,35 @@
             <button> enviar</button>
         </form>
     </fieldset>
+    <form name="formulario" method="post" action="/send.php">
+        <input type="text" name="objeto1" value="camion azul " spellcheck="true" />
+        <input type="text" name="objeto2" value="camion azul " spellcheck="false" />
+        <textarea cols="40" name="objeto3" spellcheck="true">camion azul</textarea>
+      </form>
+
+      <form name="formulario" method="post" action="/send.php">
+        Selecciona el mes deseado:
+        <input type="month" name="mes"
+               value="2018-05" min="2018-02" max="2018-06" step="2" />
+        Selecciona la semana deseada:
+        <input type="week" name="semana"
+               value="2018-W18" min="2018-W10" max="2018-W20" step="2" />
+      </form>
+
+      <form name="formulario" method="post" action="http://pagina.com/send.php">
+        Selecciona la opción deseada:
+        <select name="combo">
+          <option value="1">Opción 1</option>
+          <option value="2" selected>Opción 2</option> 
+          <option value="3">Opción 3</option>
+        </select>
+      </form> 
+      <form name="formulario" method="post" action="/send.php">
+         Usuario: <input type="text" name="usuario" />
+        <input type="submit" value="Enviar formulario" />
+        <input type="reset" value="Borrar formulario" />
+      </form>
+
+      <a href="../index.html">Volver a la pagina principal</a>
 </body>
 </html>
