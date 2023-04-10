@@ -116,3 +116,86 @@ nav {
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
+
+/* ########################## FOOTER ############################*/
+footer {
+    background: rgb(70, 70, 70);
+    padding: 20px o; /*50 0 20 0*/
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.partFoot {
+    width: 22%;
+    text-align: center;
+
+}
+.partFoot img {
+    width: 40%;
+}
+
+.partFoot h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #e0a2a2;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+    color: white;
+
+}
+
+.contact > i {
+    float: left;
+    margin-right: 10px;
+}
+
+.contact > p {
+    font-weight: 500;
+}
+
+.partFoot > a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.partFoot > a:hover {
+    background-color: antiquewhite;
+    transition: all ease-in-out .6s;
+}
+
+.social-media > a > i {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+.social-media > a > i:hover {
+    background-color: #e0a2a2;
+}
