@@ -63,10 +63,26 @@ nav {
     transition: all ease-in-out .5s;
 }
 
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i{
+    font-size: 25px;
+
+}
+
 .titulospro {
     text-align: left;
     margin: 20px 0;
 }
+
+
 
 .contenido-header {
     width: 80%;
@@ -116,6 +132,59 @@ nav {
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
+
+/* ########################## EDUCATION ############################*/
+.section-education {
+    background-color: #dbdbdb;
+}
+
+.section-education .title {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.education {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.education i {
+    border: 2px solid rosybrown;
+    border-radius: 50%;
+    background-color: #eaa9c0;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.education a{
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.education:hover {
+    background-color: #f19d9d;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .4s;
+    color: #fff;
+}
+
+
 
 /* ########################## FOOTER ############################*/
 footer {
@@ -198,4 +267,32 @@ footer {
 
 .social-media > a > i:hover {
     background-color: #e0a2a2;
+}
+/* ########################## MEDIA QUERY ############################*/
+@media screen and (max-width:700px) {
+    .hamburguer {
+        display:block;
+
+    }
+    .enlaces-header{
+        position: fixed;
+        background-color: #eaa9c0;
+        top: 0;
+        right: 0;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(1.4% at 1% 0);;
+    }
+    .nav .enlaces-header .a{
+        color: #fff;
+        background-color: #ecd8d8;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 30%;
+        text-align: center;
+
+    }
 }
